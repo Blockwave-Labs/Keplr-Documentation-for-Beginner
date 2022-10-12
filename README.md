@@ -1,6 +1,5 @@
 # Introduction
 
-{% hint style="info" %}
 Keplr is a non-custodial blockchain wallets for webpages that allow users to interact with blockchain applications.
 
 - You can find the latest version of Keplr on our [official website](https://www.keplr.app/).
