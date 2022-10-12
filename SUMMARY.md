@@ -14,4 +14,3 @@
   * [Delegate Tokens](tutorials/delegate-tokens.md)
   * [Get Contract](tutorials/get-contract.md)
 * [Example](example.md)
-* [Resources](resources.md)
