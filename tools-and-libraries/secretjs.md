@@ -2,9 +2,8 @@
 
 If you want to connect Keplr to a secret network within the Cosmos ecosystem, you can easily connect using SecretJs. SecretJs is a JavaScript SDK for writing applications that interact with the Secret Network blockchain. If you are curious about the Secret Network in the Cosmos ecosystem, you can check it out [here.](https://scrt.network/about/about-secret-network/)
 
-코스모스 생태계 안에 있는 시크릿 네트워크와 케플러를 연결하고 싶다면 SecretJs를 써서 쉽게 연결할 수 있습니다. SecretJs는 시크릿 네트워크 블록체인과 상호 작용하는 응용 프로그램을 작성하기 위한 자바스크립트 SDK입니. 만약 코스모스 생태계에 있는 Secret Network 에 대해서 궁금하다면 [이곳](https://scrt.network/about/about-secret-network/)에서 확인해볼 수 있습니다.
+Written in TypeScript and provided with type definitions.
 
-* Written in TypeScript and provided with type definitions.
 * Provides simple abstractions over core data structures.
 * Supports every possible message and transaction type.
 * Exposes every possible query type.
@@ -64,5 +63,4 @@ Returns the viewing key of a SNIP-20 token registered in Keplr. If the SNIP-20 o
 
 #### Interaction Options
 
-\
 You can use Keplr native API’s to set interaction options even when using SecretJS. Please refer to [this section](https://docs.keplr.app/api/#interaction-options).\
