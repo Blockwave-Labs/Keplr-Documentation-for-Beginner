@@ -1,7 +1,7 @@
 # Get Balance
 
 {% hint style="info" %}
-Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
+If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
 {% endhint %}
 
 필요한 패키지들을 모두 설치하고 환경 설정을 완료하였으므로 사용자의 Keplr지갑에서 Osmo 잔액을 불러오는 기능을 수행하는 코드를 작성해봅시다. 먼저 src 폴더 아래에 functions라는 폴더를 만들고 그 아래에 getBalance.js 파일을 만든 후 아래와 같은 코드를 작성합니다.

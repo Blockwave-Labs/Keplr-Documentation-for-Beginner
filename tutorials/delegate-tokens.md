@@ -1,7 +1,7 @@
 # Delegate Tokens
 
 {% hint style="info" %}
-Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
+If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
 {% endhint %}
 
 위와 같은 예제들의 구조를 유지하며 다음과 같은 코드를 작성하여 토큰을 위임하는 기능을 구현할 수 있습니다.
