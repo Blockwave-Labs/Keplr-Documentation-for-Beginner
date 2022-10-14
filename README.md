@@ -59,3 +59,5 @@ Every field has its terminology, and every specialization has its acronyms. You 
 The decentralized web is certainly no exception, and if you're new to Web3, take a gander at Cosmos's [introduction to blockchain article](https://interchainacademy.cosmos.network/academy/0.0-B9lab-Blockchains/1\_blockchain.html) in their knowledgebase.
 
 And no matter what your experience level, bookmark [Binance’s crypto-terms glossary,](https://academy.binance.com/en/glossary) an amalgamation of many sources of information that is regularly updated.
+
+## Helpful Links

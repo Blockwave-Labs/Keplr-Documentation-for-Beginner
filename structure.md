@@ -26,12 +26,14 @@ Communication between network participants is an integral part of any blockchain
 
 Blockchain adopts distributed ledger technology that takes place in the process of validation and solid agreement on orders for transactions. During this process, network participants (miner, verifier, etc.) propose, validate, and handle blocks of transactions. These nodes do not need to trust nodes other than themselves. In addition, the algorithms that perform tasks on different nodes depend on each consensus model. As such, the consensus layer serves as a module that regulates the tasks associated with all consensus processes on the node.
 
-*   **어플리케이션 레이어**
+* **Application layer**
 
-    블록체인은 분산원장 시스템을 정의할 때 사용하는 일반적인 용어입니다. 이러한 원리로, 각각의 블록체인은 탈중앙화된 어플리케이션을 만들기 위한 기반시설이 됩니다. 예를 들어, 비트코인은 탈중앙화 P2P 결제시스템입니다. 이더리움은 스마트 컨트렉트를 개발하기 위한 블록체인 입니다. 그러므로 각각의 네트워크 공간에서 정의된 프로젝트는 그것만의 비즈니스 논리를 가질 필요가 있습니다. 이것이 다른 프로젝트들을 사용하는 사례를 구분하는 가장 명확한 특징입니다. 어플리케이션 레이어는 각 프로젝트의 구성 로직들이 정의되고, 구현될 수 있는 ‘모듈’이라 할 수 있습니다.
+Blockchain is a common term used to define distributed ledger systems. With this principle, each blockchain becomes the infrastructure for creating decentralized applications. Bitcoin, for example, is a decentralized P2P payment system. Ethereum is a blockchain for developing smart contacts. Therefore, projects defined in each network space need to have their own business logic. This is the clearest feature that distinguishes cases of using other projects. The application layer is a 'module' in which the configuration logic of each project can be defined and implemented.
 
-P2P 네트워킹 레이어와 합의 레이어 층을 Tendermint core 라 부릅니다. 이들은 ABCI(Application BlockChain Interface)라는 프로토콜에 의해 애플리케이션 층에 연결됩니다. 물론 Tendermint Core은 블록체인에서의 개발시간을 몇 년에서 몇 주 단위로 단축하지만, 처음부터 ABCI-APP을 구축하는 것은 어렵습니다. 이것이 바로 코스모스 SDK가 존재하는 이유입니다.&#x20;
 
-코스모스 SDK는 텐더민트 코어 위에 안전한 블록체인 에플리케이션 구축 과정을 간소화시키는 일반화된 프레임워크입니다. Cosmos SDK로 개발된 어플리케이션 구조는 프로토콜 연결을 위한 인터페이스 및 서버 상호 작용이 중요합니다. CosmJS(Typescript/Javascript) 라이브러리를 활용하면 개발자가 프론트엔드 사용자 인터페이스와 백엔드 서버 등의 분산 어플리케이션을 구현을 쉽도록 도와주며, 코스모스 생태계와 통합하는 데에 편리하게 사용될 수 있습니다.
+
+The P2P networking layer and the consensus layer are called the Tendermint core. They are connected to the application layer by a protocol called Application Blockchain Interface (ABCI). Of course, Tendermint Core reduces development time on the blockchain from years to weeks, but building ABCI-APP from scratch is difficult. That's why the Cosmos SDK exists.&#x20;
+
+Cosmos SDK is a generalized framework that simplifies the process of building secure blockchain applications on top of a tender mint core. The application architecture developed with Cosmos SDK requires interface and server interaction for protocol connectivity. The CosmJS (Typescript/Javascript) library helps developers easily deploy distributed applications, such as front-end user interfaces and back-end servers, and can be conveniently used to integrate with the Cosmos ecosystem.
 
 </details>
