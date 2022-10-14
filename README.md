@@ -1,7 +1,7 @@
 # Introduction
 
 {% hint style="info" %}
-The Keflr Documentation for Beginner documentation is designed for front-end developers who want to be on-boarding from Web2 to Web3. In particular, we have written an example code for each function that is mainly used in the Tutorials category. I hope you can have an easier development experience through this document! We welcome all of you who came to explore the Cosmos ecosystem among the many blockchain ecosystems. I'm glad to meet you with this document. We are Blockwave Labs, which creates financial and service infrastructure on the blockchain. Please leave feedback and questions about the document here :)Keplr is a non-custodial blockchain wallets for webpages that allow users to interact with blockchain applications.
+Keplr is a non-custodial blockchain wallets for webpages that allow users to interact with blockchain applications.
 
 * You can find the latest version of Keplr on our [official website](https://www.keplr.app/).
 * For help using Keplr, visit our [User Support Site](https://help.keplr.app).
