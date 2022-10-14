@@ -2,19 +2,11 @@
 
 Keplr's 'suggest chain' feature allows front-ends to request adding new Cosmos-SDK based blockchains that isn't natively integrated to Keplr extension. This allows all Cosmos-SDK blockchains to have permissionless, instant wallet and transaction signing support for front-ends.
 
-프런트엔드는 Keplr의 'Suggest Chain' 기능을 통해 **Keplr 확장에 기본적으로 통합되어 있지 않은 새로운 Cosmos SDK 기반 블록체인 추가를 요청할 수 있습니다**. 이를 통해 모든 Cosmos SDK 블록체인은 프론트 엔드에 대한 무허가, 인스턴트 지갑 및 트랜잭션 서명 지원을 가질 수 있습니다.
-
 If the same chain is already added to Keplr, nothing will happen. If the user rejects the request, an error will be thrown.
-
-이때 **체인은 Cosmos SDK 기반이어야 하며** 동일한 체인이 이미 Keplr에 추가되어 있으면 아무 일도 일어나지 않습니다. 사용자가 요청을 거부하면 오류가 발생합니다.
 
 This feature is often used when connecting testnets. If you'd like to see an example of how to connect to a testnet, please see [here](https://undefined-434.gitbook.io/keplr-documentation/example#juno-testnet). If you want to connect a particular testnet rather than the existing chain provided by the keplr wallet, you can obtain permission through the suggest chain method. If you're curious about the detailed process of connecting the testnet, please refer to it here.
 
-해당 기능은 **테스트넷을 연결할 때에 많이 사용**됩니다. 테스트넷과 연결하는 예시를 보고 싶다면 [이곳](https://undefined-434.gitbook.io/keplr-documentation/example#juno-testnet)을 참조해주세요. keplr 지갑에서 기존에 제공하는 체인이 아닌 특정한 테스트넷을 연결하고자 할 때 suggest chain 메소드를 통해 허가를 받을 수 있습니다. 테스트넷을 연결하는 자세한 과정이 궁금하다면 이곳을 참조해주세요.
-
-Keplr supports the capabilities to contribute to the scalability of the Cosmos ecosystem. Unauthorized transaction signing and other basic account management functions through the Suggest Chain. However, there are differences between native integration and integration through the suggest chain, and some additional features require native integration. Check out the comparison table for the two integrations here.
-
-Keplr는 Cosmos 생태계의 **확장성에 기여하기 위해 해당 기능을 지원하고 있습니다.** Suggest Chain 을 통해 거래 서명 및 기타 기본 계정 관리 기능을 무허가로 제공합니다. 그러나 네이티브 통합과 suggest chain을 통한 통합에는 활용할 수 있는 기능에 대한 차이가 있고 **몇 가지 추가 기능을 구현하려면 네이티브 통합이 필요합니다.** [이곳](https://medium.com/chainapsis/keplr-explained-native-vs-suggest-chain-or-permissionless-integration-8e425f921086)에서 두가지 통합에 대한 비교 표를 확인해보세요.
+Keplr supports the capabilities to contribute to the scalability of the Cosmos ecosystem. Unauthorized transaction signing and other basic account management functions through the Suggest Chain. However, there are differences between native integration and integration through the suggest chain, and some additional features require native integration. Check out the comparison table for the two integrations[ here](https://medium.com/chainapsis/keplr-explained-native-vs-suggest-chain-or-permissionless-integration-8e425f921086).
 
 ## Get started with Suggest Chain
 
@@ -133,5 +125,3 @@ await window.keplr.experimentalSuggestChain({
 ```
 
 Keplr supports the basic the `x/bank` module's send feature and balance query. Also, it is able to show the staking reward percentage from the `supply` and `mint` module. (For Stargate chains, Keplr will find the supply through the `bank` module).
-
-Keplr는 `x/bank`모듈의 기본 보내기 기능과 잔액 쿼리를 지원합니다. 또한 `supply`및 `mint`모듈에서 스테이킹 보상 비율을 표시할 수 있습니다. (Stargate 체인의 경우, Keplr는 `bank` 모듈을 통해 공급을 찾습니다.
