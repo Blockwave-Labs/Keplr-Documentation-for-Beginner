@@ -1,32 +1,32 @@
 # Tutorials
 
-### React로 프로젝트 시작하기
+### Start a project with React
 
-#### Node.js와 NPM 설치하기
+#### Install Node.js and NPM
 
 {% embed url="https://nodejs.org/en/" %}
 
-위의 사이트에서 Node.js를 설치합니다. NPM은 Node.js를 설치하면 자동으로 함께 설치됩니다.
+Install Node.js from the site above. NPM is automatically installed together when Node.js is installed.
 
-설치를 완료하였다면 아래의 명령어를 실행하여 잘 설치되었는지 확인합니다.
+If you have completed the installation, run the command below to verify that it is installed well.
 
 ```javascript
 $ node -v
 $ npm -v
 ```
 
-#### VSCode에서 React 프로젝트 생성
+#### Create a React Project in VSCode
 
-아래 명령어를 원하는 위치의 디렉토리에서 실행시켜 React 프로젝트를 생성합니다.
+Create a React project by executing the command below from the directory in the desired location.
 
 ```javascript
 $ npm install -g create-react-app
 $ create-react-app {PROJECT_NAME}
 ```
 
-이 튜토리얼에선 `PROJECT_NAME`을 **`keplr-app`**으로 하겠습니다.
+In this tutorial, we'll use `PROJECT_NAME` as **`keplr-app`**.
 
-프로젝트를 생성하고 난 뒤 ‘keplr-app’ 디렉토리 구조는 다음과 같습니다.
+After creating the project, the 'keplr-app' directory structure is as follows.
 
 ```javascript
 keplr-app
@@ -49,13 +49,13 @@ keplr-app
     └── reportWebVitals.js
 ```
 
-keplr-app 루트 디렉토리로 이동하여 아래와 같은 명령어를 실행시키면 해당 프로젝트의 동작을 웹 브라우저에서 확인할 수 있습니다.
+Go to the keplr-app root directory and run the command below to see the behavior of the project in a web browser.
 
 ```
 $ npm start
 ```
 
-먼저 아래와 같은 명령어를 실행하여 필요한 패키지들을 설치해줍니다.
+First, run the following command to install the necessary packages.
 
 ```javascript
 $ npm i @cosmjs/stargate
@@ -65,7 +65,7 @@ $ npm i @cosmjs/proto-signing
 $ npm i path
 ```
 
-⚠️ 만약 아래와 비슷한 오류가 발생한다면 아래 명령어를 추가적으로 실행하십시오.
+⚠ If you encounter an error similar to the one below, run the following additional commands:
 
 ```javascript
 Module not found: Error: Can't resolve 'crypto' in {file_path}
@@ -85,11 +85,11 @@ $ npm uninstall react-scripts
 $ npm install react-scripts@4.0.3
 ```
 
-만일 `react-scripts`를 downgrade하는 것을 원치 않는다면 아래의 링크를 참조하여 적절한 조치를 취하십시오.
+If you do not wish to downgrade the `react-scripts`, please refer to the link below and take appropriate action.
 
 {% embed url="https://stackoverflow.com/questions/70398678/i-tried-to-polyfill-modules-in-webpack-5-but-not-working-reactjs" %}
 
-이제 React로 프로젝트를 시작할 준비가 끝났습니다. 아래 튜토리얼의 예제 코드를 참조하여 원하는 기능을 구현해보세요!
+You are now ready to start your project with React. Refer to the example code in the tutorial below to implement the features you want!
 
 {% content-ref url="get-balance.md" %}
 [get-balance.md](get-balance.md)
