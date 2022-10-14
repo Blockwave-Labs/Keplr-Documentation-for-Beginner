@@ -1,30 +1,30 @@
 # Send Tokens
 
 {% hint style="info" %}
-Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
+If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
 {% endhint %}
 
-나의 keplr 지갑에 cosmos testnet인 theta-testnet-001 네트워크를 연결하고 1 ATOM을 나의 지갑 주소로 발행합니다.
+Connect theta-testnet-001 network which is cosmos testnet to my keplr wallet and issue 1 ATOM to my wallet address.
 
 
 
-먼저 아래 링크의 코드를 실행시켜 나의 keplr 지갑에 theta-testnet-001 네트워크를 연결합니다.
+First, run the code from the link below to connect theta-testnet-001 network to my keplr wallet.
 
 {% embed url="https://jsfiddle.net/kht96uvo/1/" %}
 
-그리고 아래 링크에서 내 cosmos hub 지갑 주소를 넣어 testnet ATOM을 부여받습니다.
+Also, you can get a testnet ATOM by putting your cosmos hub wallet address in the link below.
 
 {% embed url="https://www.allthatnode.com/faucet/cosmos.dsrv" %}
 
-그러면 아래와 같이 keplr 지갑 cosmos hub testnet에서 ATOM이 생긴 것을 확인할 수 있습니다.
+Then, you can see that ATOM was created in the keplr wallet cosmos hub testnet as below.
 
 <figure><img src="../.gitbook/assets/Untitled (12).png" alt=""><figcaption></figcaption></figure>
 
-이제 이 ATOM을 가지고 다른 지갑 주소로 원하는 만큼의 ATOM을 보내는 sendToken 기능을 만들어봅시다.
+Now let's take this ATOM and create a sendToken function that sends as many ATOMs as you want to other wallet addresses.
 
 
 
-위의 getBalance 예제와 비슷한 구조로 코드를 짜겠습니다. 먼저 src/functions 위치에 sendTokens.js 파일을 생성하고 아래와 같이 코드를 작성합니다.
+Let's create a code similar to the getBalance example above. First, create the sendTokens.js file in the src/functions location and write the code as shown below.
 
 ```javascript
 import { SigningCosmWasmClient } from "@cosmjs/cosmwasm-stargate";
@@ -122,7 +122,7 @@ src/functions/sendTokens.js
 
 
 
-이 때, 사용하는 체인이 get balance 예제와는 다른 ‘theta-testnet-001’이므로 해당 네트워크에 맞도록 chainInfo를 새로 만들어줍니다. src/data 디렉토리 아래에 새로운 chainInfo\_testnet.js를 만들어줍니다.
+At this time, the chain you are using is 'theta-testnet-001', which is different from the getbalance example, so create a new chainInfo to fit your network. Create a new chainInfo\_testnet.js under the src/data directory.
 
 ```javascript
 import { Bech32Address } from "@keplr-wallet/cosmos";
@@ -205,7 +205,7 @@ src/data/chaininfo\_testnet.js
 
 
 
-그리고 위의 동작을 수행할 버튼을 또 다시 아래의 코드를 작성하여 생성해주고 App.js에 추가해줍니다.
+Then, write the code below again to create a button to perform the above action and add it to App.js.
 
 ```javascript
 import React from "react";
@@ -247,11 +247,11 @@ src/App.js
 
 
 
-버튼을 눌러서 코드를 실행시키면 아래와 같은 창이 뜹니다.
+When you press the button to execute the code, a window appears as shown below.
 
 <figure><img src="../.gitbook/assets/Untitled (13).png" alt=""><figcaption></figcaption></figure>
 
-위의 창에서 허락을 누르고 콘솔을 확인해보면 다음과 같이 성공적으로 실행 후 transaction 정보를 반환하는 것을 확인할 수 있습니다.
+In the window above, click Allow and check the console to see that you return transaction information after successful execution as follows:
 
 <figure><img src="../.gitbook/assets/Untitled (14).png" alt=""><figcaption></figcaption></figure>
 
@@ -266,15 +266,15 @@ tx:
 
 ```
 
-내 지갑에서 동일한 내 지갑으로 token을 전송한 것이기 때문에 지갑을 확인했을 때 사용한 gas fee만큼만 빠져나갔다면 제대로 token 전송이 실행됐음을 확인할 수 있습니다. 0.082142 ATOM만큼 gas fee로 사용했기 때문에 지갑의 잔액을 확인해보면 기존의 1 ATOM에서 0.082142 ATOM이 빠져나간 0.917858ATOM 만큼 남아있는 것을 확인할 수 있습니다.
+When you checked your wallet, you can confirm that the token transfer was executed properly if only the gas fee you used was left. Since I used 0.082142 Atom as a gas fee, if I check the balance of my wallet, I can see that there is only 0.917858 Atom that 0.082142 Atom escaped from the existing 1 Atom.
 
 <figure><img src="../.gitbook/assets/Untitled (15).png" alt=""><figcaption></figcaption></figure>
 
-또한 반환 받은 transaction\_hash값을 가지고 transaction info를 조회해볼 수 있습니다.
+In addition, a return from the hash transaction transaction with a value can be seen to have a reference info.
 
 
 
-그러면 아래의 cosmos testnet explorer에서 해당 transaction hash값을 검색하여 정보를 상세히 볼 수 있습니다.
+You can then search the corresponding transaction hash value in the cosmos testnet explorer below to view the information in detail.
 
 {% embed url="https://explorer.theta-testnet.polypore.xyz/transactions/FDD2E314FED186D74EA90782B85F7C2DC1CE7EA225764B0AC593BDB09BC84167" %}
 

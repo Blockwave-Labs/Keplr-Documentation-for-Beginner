@@ -1,10 +1,12 @@
+---
+description: Function by function
+---
+
 # Example
 
-## Function by function <a href="#undefined" id="undefined"></a>
+### Cosmjs Key Module-Specific Offered Functions & Interfaces
 
-### Cosmjs 주요 모듈 별 제공 함수 & 인터페이스
-
-아래 링크에서 쉽게 찾으실 수 있습니다.
+You can find it easily at the link below.
 
 *   **@cosmjs/cosmwasm-stargate Docs**
 
@@ -512,15 +514,15 @@ const example2 = toHex(fromBech32("tiov1zg62hngqqz4qqq8lluqqp2sqqqfrf27dzrrmea")
 
 #### Why encoding is needed?
 
-여러 주소 표시 체계가 있는데 해당 패키지에서는 Bech32, Hex, Ascii, Base64, RFC3339, UTF8 간의 encoding을 지원합니다.
+There are several address display schemes, which support encoding between Bech32, Hex, Ascii, Base64, RFC339, and UTF8.
 
-#### Bech32란?
+#### What is Bech32?
 
 Bech32 is a [segwit](https://en.bitcoin.it/wiki/Segwit) [address](https://en.bitcoin.it/wiki/Address) format specified by [BIP 0173](https://en.bitcoin.it/wiki/BIP\_0173). This address format is also known as "bc1 addresses". Bech32 is more efficient with block space. As of October 2020, the Bech32 address format is supported in many popular wallets and is the preferred address scheme.
 
-이렇게 블록체제에서 Bech32가 유리하지만 TxHash 등은 Hex이고 상황에 따라 사용해야하는 주소 체계가 있기 때문에 해당 모듈을 사용하면 이를 해결할 수 있습니다.
+Although Bech32 is advantageous in this block system, TxHash, etc. is Hex and has an address system that needs to be used depending on the situation, so the module can solve this problem.
 
-<제공하는 method 목록>
+\<List of methods provided>
 
 ```jsx
 export { fromAscii, toAscii } from "./ascii";
@@ -531,4 +533,4 @@ export { fromRfc3339, toRfc3339 } from "./rfc3339";
 export { fromUtf8, toUtf8 } from "./utf8";
 ```
 
-모듈의 디테일한 코드, 기능에 대해 알고 싶다면 [이곳](https://github.com/cosmos/cosmjs/tree/main/packages/encoding/src)에서 오픈소스를 참고하길 바랍니다.
+If you want to know more about the module's detailed code and functions, please refer to Open Source [here](https://github.com/cosmos/cosmjs/tree/main/packages/encoding/src).
