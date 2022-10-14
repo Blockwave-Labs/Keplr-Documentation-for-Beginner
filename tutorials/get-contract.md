@@ -1,7 +1,7 @@
 # Get Contract
 
 {% hint style="info" %}
-If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
+Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
 {% endhint %}
 
 ```javascript

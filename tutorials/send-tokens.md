@@ -1,7 +1,7 @@
 # Send Tokens
 
 {% hint style="info" %}
-If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
+Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
 {% endhint %}
 
 나의 keplr 지갑에 cosmos testnet인 theta-testnet-001 네트워크를 연결하고 1 ATOM을 나의 지갑 주소로 발행합니다.
