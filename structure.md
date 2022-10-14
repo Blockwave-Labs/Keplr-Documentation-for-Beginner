@@ -4,9 +4,9 @@ description: "\bUnderstanding the entire Cosmos ecosystem in easiest way."
 
 # Structure
 
-케플러를 통해 모든 코스모스 생태계에 있는 각종 체인 및 자산 관리가 가능합니다. 코스모스 SDK 모듈 중 IBC protocol은 우리 생태계에 있는 모든 네트워크가 상호 소통하도록 만드는 프로토콜입니다. 케플러는 코스모스 생태계의 IBC protocol을 지원하는 유일한 수단입니다. 아래 토글을 통해 코스모스 생태계에 대한 전반적인 구조를 이해할 수 있습니다.&#x20;
+Keplr enables the management of various chains and assets in all Cosmos ecosystems. Among the Cosmos SDK modules, the IBC protocol is a protocol that makes all networks in our ecosystem communicate with each other. Keplr is the only means of supporting the IBC protocol in the Cosmos ecosystem. You can understand the overall structure of the cosmos ecosystem through the toggle below.
 
-마지막으로, 케플러는 CosmJS와 같은 라이브러리에 쉽게 연결할 수 있어 웹페이지를 블록체인에 연결하는 프로세스를 단순화할 수 있습니다. CosmJS로 케플러를 다루고 싶으면 [이곳](tools-and-libraries/cosmjs.md)을 클릭해주세요.
+Finally, Keplr can easily connect to libraries such as CosmJS, simplifying the process of linking web pages to the blockchain. Click [here](tools-and-libraries/cosmjs.md) to handle Kepler with CosmJS.
 
 
 
@@ -16,19 +16,15 @@ description: "\bUnderstanding the entire Cosmos ecosystem in easiest way."
 
 <summary>The structure of Cosmos ecosystem</summary>
 
-코스모스 생태계는 아래와 같은 세 가지 레이어로 구성되어 있습니다.
+The Cosmos ecosystem consists of three layers:
 
-*   **P2P 네트워킹 레이어**
+* **P2P Networking Layer**
 
-    네트워크 참여자 사이에서의 소통은 모든 블록체인 시스템에서 필수적인 요소입니다. 분산 원장 기술 기반의 시스템에 필요한 소통 방식은 매우 다양합니다. 무엇보다도 합의 레이어에 닿아야 하는 책임이 있는 노드는 결정을 내리기 위해 또 다른 노드와 소통해야 합니다. 유저들은 이러한 일련의 과정을 통해 거래를 보낼 수 있는 상태가 됩니다. 마지막으로 제 3자로 참여하는 어플리케이션 (예를 들어 스마트 컨트렉트, 지갑, 혹은 dApp)은 블록체인과 거래할 채널(경로)을 찾아야 하며, 이 P2P 네트워크 층이 이를 지원합니다. 결론적으로 네트워크 레이어는 모든 종류의 노드 간 소통 방식을 촉진시키고, 원활하게 할 의무가 있는 레이어입니다.
+Communication between network participants is an integral part of any blockchain system. The communication methods required for distributed ledger technology-based systems vary widely. Above all, nodes responsible for reaching the consensus layer must communicate with another node to make a decision. Users are able to send transactions through this series of processes. Finally, third-party applications (for example, smart contacts, wallets, or dApps) need to find channels (paths) to trade with the blockchain, and this P2P network layer supports them. In conclusion, the network layer is a layer that is obligated to facilitate and facilitate all kinds of node-to-node communication.
 
-<!---->
+* **Consensus Layer**
 
-*   **합의 레이어**
-
-    블록체인은 검증과 거래의 주문에 대한 확실한 합의 과정에서 이뤄지는 분산 원장 기술을 채택하고 있습니다. 이러한 과정 동안에 네트워크 참여자들(채굴자, 검증인 etc.)는 제안하고, 검증하며 거래의 블록을 처리합니다. 이러한 노드는 자신 이외의 노드를 믿을 필요가 없습니다. 게다가 다른 노드에 대해 과업을 수행하는 알고리즘은 각각의 합의 모델에 따라 달라집니다. 이렇듯, 합의 레이어는 노드의 모든 합의 과정과 관련된 과업을 조절하는 모듈로써 역할을 수행합니다.
-
-<!---->
+Blockchain adopts distributed ledger technology that takes place in the process of validation and solid agreement on orders for transactions. During this process, network participants (miner, verifier, etc.) propose, validate, and handle blocks of transactions. These nodes do not need to trust nodes other than themselves. In addition, the algorithms that perform tasks on different nodes depend on each consensus model. As such, the consensus layer serves as a module that regulates the tasks associated with all consensus processes on the node.
 
 *   **어플리케이션 레이어**
 
