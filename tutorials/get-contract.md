@@ -1,7 +1,7 @@
 # Get Contract
 
 {% hint style="info" %}
-If you need a tutorial on Node.js and NPM installation, please check the [top tab](./).
+Node.js와 NPM 설치에 대한 튜토리얼이 필요하다면 [상위 탭](./)을 확인해주세요.
 {% endhint %}
 
 ```javascript
@@ -105,4 +105,4 @@ const getContracts = async () => {
 export default getContracts;
 ```
 
-⚠ For some functions, if there is no return value for the function you call, an error is returned (if there is no history) and Promise is rejected.
+⚠️ 일부 함수에 대해서는 만약 호출하는 함수에 대한 반환값이 없으면 (내역이 없으면) 오류를 반환하고 Promise가 거부됩니다.
