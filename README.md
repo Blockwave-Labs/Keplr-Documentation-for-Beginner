@@ -28,9 +28,9 @@ Keplr is a non-custodial blockchain wallets for webpages that allow users to int
 
 * Keplr can easily connect to libraries such as CosmJs, simplifying the process of connecting webpages to blockchains.
 
+## Index
 
-
-## Click here to learn how to start building with Keplr.
+Click here to learn how to start building with Keplr.
 
 {% content-ref url="getting-started.md" %}
 [getting-started.md](getting-started.md)
