@@ -1,6 +1,8 @@
-# Example
+---
+description: Function by function
+---
 
-## Function by function <a href="#undefined" id="undefined"></a>
+# Example
 
 ### Cosmjs Key Module-Specific Offered Functions & Interfaces
 
