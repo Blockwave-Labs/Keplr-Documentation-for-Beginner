@@ -62,7 +62,7 @@ For those who are interested in blockchain and web3, recommend [the Blockchain 1
 
 And check out [Binance's Crypto Glossary](https://academy.binance.com/en/glossary) for solutions to difficult words.
 
-## Helpful Rinks
+## Helpful Links
 
 The Keplr Documentation for Beginner is designed for front-end developers who want to be on-boarding from Web2 to Web3. In particular, we have written an example code for each function that is mainly used in the [Tutorials](tutorials/) category. I hope you can have an easier development experience through this document!&#x20;
 
