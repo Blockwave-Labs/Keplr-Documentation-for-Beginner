@@ -22,7 +22,7 @@ Keplr is a non-custodial blockchain wallets for webpages that allow users to int
 
 ### Direct Staking
 
-* Keplr Wallet allows users to stake assets on the respective chain.
+* Users can staking their assets directly within the Keplr wallet extension. It reduces the inconvenience of users who need to connect to each chain and stake.
 
 ### Easy to Connect
 
