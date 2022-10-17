@@ -2,17 +2,11 @@
 
 The CosmJs library is the easiest way to connect your chain to Keplr wallet. CosmJS is a Typescript/JavaScript library. It helps developers integrate frontend user interfaces and backend servers with Cosmos blockchains that implement distributed applications.&#x20;
 
-CosmJs 라이브러리를 사용하면 여러분의 체인과 케플러 지갑을 가장 쉽게 연결할 수 있습니다. CosmJs는 타입스크립트/자바스크립트 라이브러리 입니다. 개발자가 프런트 엔드 사용자 인터페이스와 백엔드 서버를 분산 애플리케이션을 구현하는 코스모스 블록체인과 통합할 수 있도록 지원합니다.
-
 ![](<../.gitbook/assets/image (1) (1).png>)
 
 The modular structure of CosmJS lets developers import only the parts that are needed, which helps reduce download payloads. Since the library is unopinionated, it is compatible with popular JavaScript frameworks such as Vue, React, and Express.&#x20;
 
-CosmJs의 모듈러 구조는 개발자가 필요한 부품만 가져올 수 있도록 해 다운로드 페이로드를 줄이는 데 도움이 됩니다. 라이브러리가 제한이 없기 때문에 Vue, React, Express 와 같은 인기 있는 자바스크립트 프레임워크와 호환됩니다.
-
 CosmJS is a library that consists of many smaller npm packages within the [@cosmjs namespace](https://www.npmjs.com/org/cosmjs). Generally people only need the `stargate` and `encoding` packages as they contain the main functionality to interact with Cosmos SDK chains version 0.40 and higher.&#x20;
-
-CosmJs는 [@cosmjs namespace](https://www.npmjs.com/org/cosmjs). 내에 많은 작은 npm 패키지로 구성된 라이브러리입니다. `stargate` 및 `encoding` 패키지는 Cosmos SDK 체인 버전 0.40 이상과 상호 작용하기 위한 주요 기능을 포함하고 있기 때문에 일반적으로 사람들은 두 개의 패키지만 필요할 것입니다.
 
 ## Get started with CosmJs
 
@@ -20,29 +14,26 @@ CosmJs는 [@cosmjs namespace](https://www.npmjs.com/org/cosmjs). 내에 많은 �
 
 You can use cosmJs by installing the modules below.
 
-아래 모듈을 설치하여 cosmjs를 사용할 수 있습니다.
+```
+// Typical Module Example
+```
 
 ```javascript
-// 대표적인 모듈 예시
 npm i @cosmjs/proto-signing
 npm i @cosmjs/cosmwasm-stargate
 npm i @cosmjs/stargate
 npm i @cosmjs/launchpad
 ```
 
-Representative brief description of module
+\<Representative brief description of module>
 
-<대표 간략한 모듈에 대한 설명>
-
-| Module                    | Note                                                                                                                                                                             |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| @cosmjs/proto-signing     | <p>Package with utility for signing protobuf-based messages to connect dApp front end to user wallet</p><p>dApp 프론트 엔드를 사용자 지갑에 연결하기 위해 protobuf 기반 메시지 서명을 위한 유틸리티가 포함된 패키지</p> |
-| @cosmjs/stargate          | <p>Client Library for Cosmos SDK</p><p>Cosmos SDK 용 클라이언트 라이브러리</p>                                                                                                              |
-| @cosmjs/cosmwasm-stargate | <p>Expanded Library with Capabilities for CosmWasm Smart Contracts</p><p>CosmWasm 스마트 계약 을 위한 기능으로 확장된 라이브러리</p>                                                                 |
+| Module                    | Note                                                                                              |
+| ------------------------- | ------------------------------------------------------------------------------------------------- |
+| @cosmjs/proto-signing     | Package with utility for signing protobuf-based messages to connect dApp front end to user wallet |
+| @cosmjs/stargate          | Client Library for Cosmos SDK                                                                     |
+| @cosmjs/cosmwasm-stargate | Expanded Library with Capabilities for CosmWasm Smart Contracts                                   |
 
 Additional descriptions of the CosmJs module can be found [here](https://www.npmjs.com/org/cosmjs).
-
-이 외 CosmJs 모듈과 자세한 설명은 [해당 링크](https://www.npmjs.com/org/cosmjs)에서 확인할 수 있습니다.
 
 ### 2. How to detect Keplr
 
@@ -114,15 +105,15 @@ Also, `window.getOfflineSignerAuto(chainId: string): Promise<OfflineSigner | Off
 
 ### 3. Connect to network
 
-이용하기에 앞서서 연결하고자 하는 네트워크, 체인에 대한 정보를 기입해야하는데 각각의 체인에 대한 정보 양식은 아래에서 가져다가 사용할 수 있습니다.
+Before using it, you must fill out information about the network and chain you want to connect to, and the information form for each chain can be taken and used below.
 
-먼저 아래와 같은 명령어를 실행하여 모듈을 다운 받습니다.
+First, run the following command to download the module:
 
 ```javascript
 npm i @keplr-wallet/cosmos
 ```
 
-<체인이름 별 정보 양식>
+\<Information form by chain name>
 
 <details>
 
