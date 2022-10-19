@@ -1,8 +1,6 @@
 ---
 description: Function by function
 ---
-google-site-verification: google73de9596e1c93ff5.html
-
 # Example
 
 ### Cosmjs Key Module-Specific Offered Functions & Interfaces
