@@ -1,5 +1,3 @@
-<a id="raw-url" href="https://raw.githubusercontent.com/Blockwave-Labs/Keplr-Documentation-for-Beginner/master/google73de9596e1c93ff5.html">Download FILE</a>
-
 # Introduction
 
 {% hint style="info" %}
